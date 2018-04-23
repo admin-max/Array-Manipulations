@@ -12,12 +12,12 @@ public class TurningArray2D
 				              {93,94,95,96,97,98,99}};
 		
 		printArray2D(testArr2D); /*It will print: 
-		                                        65 66 67 68 69 70 71
-	                                            72 73 74 75 76 77 78
-	                                            79 80 81 82 83 84 85
-		                                        86 87 88 89 90 91 92
-		                                        93 94 95 96 97 98 99
-                                 */		
+                                                 65,66,67,68,69,70,71
+				                                 72,73,74,75,76,77,78
+				                                 79,80,81,82,83,84,85
+				                                 86,87,88,89,90,91,92
+				                                 93,94,95,96,97,98,99
+	                             */
 
 	 	
 		
@@ -52,7 +52,7 @@ public class TurningArray2D
 		
 		for (int i = 0, j = arr2D.length-1; i <= j ; i++, j--)
 		{	
-			for (int x = 0, y = arr2D[i].length - 1; x < arr2D[i].length && !(i==j && x>y); x++,y--)
+			for (int x = 0, y = arr2D[i].length - 1; !(i==j && x>y); x++,y--)
 			{	
 				temp = arr2D[i][x];
 				
